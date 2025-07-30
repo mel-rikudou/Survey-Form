@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/style.css">
+        <title>Survery Form</title>
+    </head>
+    <body>
+        <h1>Survery Form</h1>
+        <p>Erzähle mir von deinen Buchvorlieben.</p>
+        <form name="myForm" id="formular">
+            <!--Name-->
+            <label id="labelName" for="name">
+                <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+            </label>
+            <!--E-Mail-->
+            <label id="labelEmail" for="email">
+                <input type="email" name="email" id="email" placeholder="Enter your E-Mail" required>
+            </label>
+            <!--Alter-->
+            <label id="labelAge" for="age">
+                <input type="number" name="age" id="age" placeholder="Age">
+            </label> 
+            <!--Dropdown-->
+            <label id="labelDropdown" for="dropdown"> Wie liest du?
+                <select name="dropdown" id="dropdown">
+                    <option>Buch physisch</option>
+                    <option>e-Book</option>
+                    <option>Manga</option>
+                    <option>Andere</option>
+                </select>
+            </label>
+            <!--Radio Buttons-->
+            <label>
+                <input type="radio" id="radio" name="radio" value="">
+            </label>
+            <!--Checkboxes-->
+            <label>
+                <input type="checkbox" id="checkbox" name="checkbox" value="">
+            </label>
+            <!--Textarea-->
+            <textarea cols="50" rows="10" placeholder="Das möchte ich sagen..."></textarea>
+            <!--Submit Button-->
+            <button id="submit" type="submit">Absenden</button>
+        </form>
+    </body>
+</html>
